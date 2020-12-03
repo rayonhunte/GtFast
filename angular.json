@@ -121,8 +121,16 @@
               "devServerTarget": "GtFast:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "GtFast"
+    }
+  },
+  "defaultProject": "GtFast",
+  "cli": {
+    "analytics": "a8350842-dc65-4a32-8e1b-b4a76a2cb5a5"
+  }
 }

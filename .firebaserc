@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "gtfast-7bf85": {
+      "hosting": {
+        "GtFast": [
+          "gtfast-7bf85"
+        ]
+      }
+    }
+  }
+}

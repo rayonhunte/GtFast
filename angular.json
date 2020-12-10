@@ -29,7 +29,7 @@
             ],
             "styles": [
               "src/custom-theme.scss",
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -93,7 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -133,5 +133,10 @@
   "defaultProject": "GtFast",
   "cli": {
     "analytics": "a8350842-dc65-4a32-8e1b-b4a76a2cb5a5"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
   }
 }

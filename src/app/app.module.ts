@@ -12,11 +12,13 @@ import {AngularFireAuthModule} from '@angular/fire/auth';
 import {environment as env} from '../environments/environment';
 // angular material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoogleSiginDirective } from './user/google-sigin.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GoogleSiginDirective
   ],
   imports: [
     BrowserModule,

@@ -1,17 +1,33 @@
-<p>login works!</p>
-
+<!-- <div class="container">
+<mat-card class="login-card" *ngIf="afAuth.authState | async as user">
+  <mat-card-header>
+    <div mat-card-avatar class="" *ngIf="user.photoURL">
+      <img src="{{user.photoURL}}"  width="40px">
+    </div>
+    <mat-card-subtitle>
+      {{user.email}}
+    </mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
 <div *ngIf="!(afAuth.authState | async)">
-  <button mat-raised-button appGoogleSigin>
-    <img src="/assets/google-logo.svg" /> Login with Google
-</button>
+  <button mat-raised-button appGoogleSigin color="primary">
+   <mat-icon>face</mat-icon> Login with Google
+  </button>
+</div>
+<button mat-stroked-button (click)="afAuth.signOut()" color="primary">Logout</button>
+</div> -->
+<div class="container">
+  <div *ngIf="!(afAuth.authState | async)">
+    <button mat-raised-button appGoogleSigin color="primary" matTooltip="Google">
+     <mat-icon>face</mat-icon> Login with Google
+    </button>
+  </div>  
 </div>
 
+  <!-- <div *ngIf="afAuth.authState | async as user" class="logout">
+    <p>
+      Logged in as <strong>{{ user.email }}</strong>
+    </p>
 
-<div *ngIf="afAuth.authState | async as user" class="logout">
-  <p>
-    Logged in as <strong>{{ user.email }}</strong>
-  </p>
-
-  <button mat-stroked-button (click)="afAuth.signOut()">Logout</button>
-</div>
-
+   
+  </div> -->

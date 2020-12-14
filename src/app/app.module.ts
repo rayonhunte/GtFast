@@ -18,6 +18,9 @@ import { GoogleSiginDirective } from './user/google-sigin.directive';
 import {NgxsModule} from '@ngxs/store';
 import { LoginComponent } from './user/login/login.component';
 
+// shared module
+import {SharedModule} from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import { LoginComponent } from './user/login/login.component';
     AngularFirestoreModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
-    NgxsModule.forRoot([], { developmentMode: !environment.production})
+    NgxsModule.forRoot([], { developmentMode: !environment.production}),
+    SharedModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,6 +17,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatChipsModule} from '@angular/material/chips';
+
 // sahred component 
 import { ShellComponent } from './shell/shell.component';
 
@@ -28,6 +30,7 @@ const modules = [
   MatListModule,
   MatToolbarModule,
   MatTooltipModule,
+  MatChipsModule,
   RouterModule
 ]
 

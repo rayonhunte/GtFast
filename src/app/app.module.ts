@@ -22,6 +22,7 @@ import { LoginComponent } from './user/login/login.component';
 import {SharedModule} from './shared/shared.module';
 import { ProfileComponent } from './user/profile/profile.component';
 import { HomeComponent } from './home/home.component';
+import { FastComponent } from './user/fast/fast.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     GoogleSiginDirective,
     LoginComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    FastComponent
   ],
   imports: [
     BrowserModule,

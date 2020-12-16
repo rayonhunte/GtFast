@@ -2,6 +2,7 @@ export const environment = {
   production: true,
   firebaseConfig: {
     apiKey: 'AIzaSyD8NZvEcRcjIMIc38-oNu5LG7g2WHF909U',
+    databaseURL: "https://gtfast-7bf85-default-rtdb.firebaseio.com",
     authDomain: 'gtfast-7bf85.firebaseapp.com',
     projectId: 'gtfast-7bf85',
     storageBucket: 'gtfast-7bf85.appspot.com',

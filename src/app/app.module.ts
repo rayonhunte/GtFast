@@ -20,13 +20,17 @@ import { LoginComponent } from './user/login/login.component';
 
 // shared module
 import {SharedModule} from './shared/shared.module';
+import { ProfileComponent } from './user/profile/profile.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GoogleSiginDirective,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

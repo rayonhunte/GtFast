@@ -27,7 +27,8 @@ const modules = [
   MatSidenavModule,
   MatListModule,
   MatToolbarModule,
-  MatTooltipModule
+  MatTooltipModule,
+  RouterModule
 ]
 
 const components = [

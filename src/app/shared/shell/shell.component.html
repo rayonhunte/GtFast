@@ -8,7 +8,7 @@
                 <mat-icon style="cursor: pointer;" >login</mat-icon>
             </a>
             <div *ngIf="(afAuth.authState | async)" matTooltip="PROFILE">
-                <a mat-list-item routerLink="/">
+                <a mat-list-item routerLink="/profile">
                     <mat-icon style="cursor: pointer;">face</mat-icon>
                 </a>
                 <a mat-list-item routerLink="/" (click)="afAuth.signOut()" matTooltip="LOGOUT">

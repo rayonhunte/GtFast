@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatDividerModule} from '@angular/material/divider';
 
 // sahred component 
 import { ShellComponent } from './shell/shell.component';
@@ -31,6 +32,7 @@ const modules = [
   MatToolbarModule,
   MatTooltipModule,
   MatChipsModule,
+  MatDividerModule,
   RouterModule
 ]
 

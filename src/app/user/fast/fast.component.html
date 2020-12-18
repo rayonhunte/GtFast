@@ -1,7 +1,13 @@
 <body>
     <mat-card>
-        <mat-card-content style="text-align: center;">
-            <mat-icon style="font-size: 6em;">timer</mat-icon>
+        <mat-card-content>
+            <div  mat-card-avatar>
+                <mat-icon style="font-size: 3em; color: red">timer</mat-icon>
+            </div>
+            <mat-divider></mat-divider>
+           <p style="padding: 4em">
+               Count {{time}}
+           </p>    
         </mat-card-content>
         <mat-card-content>
             <mat-card-actions>

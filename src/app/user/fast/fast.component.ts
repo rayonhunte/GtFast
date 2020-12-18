@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FastComponent implements OnInit {
 
+  time: number;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.time = new Date().getTime()
   }
 
 }

@@ -8,6 +8,8 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class ProfileComponent implements OnInit {
 
+  
+
   constructor(public afAuth: AngularFireAuth) { }
 
   ngOnInit(): void {

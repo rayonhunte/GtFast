@@ -23,6 +23,7 @@ import {SharedModule} from './shared/shared.module';
 import { ProfileComponent } from './user/profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { FastComponent } from './user/fast/fast.component';
+import {UserState}  from './state/user.state';
 
 
 @NgModule({
@@ -41,7 +42,7 @@ import { FastComponent } from './user/fast/fast.component';
     AngularFirestoreModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
-    NgxsModule.forRoot([], { developmentMode: !environment.production}),
+    NgxsModule.forRoot([UserState], { developmentMode: !environment.production}),
     SharedModule
     
   ],

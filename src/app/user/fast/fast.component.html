@@ -1,19 +1,49 @@
 <body>
-    <mat-card>
+    <mat-card class="fastCard">
+        <!-- <mat-card-header> -->
+                <mat-icon style="font-size: 3em; color: red">local_fire_department</mat-icon>
+        <!-- </mat-card-header> -->
         <mat-card-content>
-            <div  mat-card-avatar>
-                <mat-icon style="font-size: 3em; color: red">timer</mat-icon>
-            </div>
-            <mat-divider></mat-divider>
-           <p style="padding: 4em">
-               Count {{time}}
-           </p>    
+            <!-- <mat-divider  [inset]="true"></mat-divider>  -->
+            <mat-card-actions class="divide" align="center">
+                <button mat-raised-button>
+                    Start Fast
+                </button>
+                <button mat-raised-button>
+                    End End
+                </button>
+            </mat-card-actions>
         </mat-card-content>
-        <mat-card-content>
-            <mat-card-actions>
-               <button mat-button>Start Fast</button>
-               <button mat-button>End Fast</button>
-           </mat-card-actions>             
+        <mat-card-content> 
+            <mat-grid-list cols="3" rowHeight="100px">
+                <mat-grid-tile>
+                    <mat-icon style="font-size: 3em; color: brown"
+                    matTooltip="Fasting" fontSet="material-icons-outlined">run_circle</mat-icon>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-icon style="font-size: 3em; color: red"
+                    matTooltip="Autophagy">blur_circular</mat-icon>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-icon style="font-size: 3em; color: green" 
+                    matTooltip="Feeding" fontSet="material-icons-outlined">cake</mat-icon>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card-content>
+        <mat-card-content> 
+            <mat-grid-list cols="3" rowHeight="100px">
+                <mat-grid-tile>
+                   HRS: 7
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    HRS: 8
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    HRS: 7
+                </mat-grid-tile>
+            </mat-grid-list>
         </mat-card-content>
     </mat-card>
 </body>
+
+

@@ -19,8 +19,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDividerModule} from '@angular/material/divider';
-
-// sahred component 
+import {MatGridListModule} from '@angular/material/grid-list';
+// shared component
 import { ShellComponent } from './shell/shell.component';
 
 const modules = [
@@ -33,6 +33,7 @@ const modules = [
   MatTooltipModule,
   MatChipsModule,
   MatDividerModule,
+  MatGridListModule,
   RouterModule
 ]
 

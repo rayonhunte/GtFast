@@ -22,6 +22,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 // shared component
 import { ShellComponent } from './shell/shell.component';
+import { SettingComponent } from './setting/setting.component';
 
 const modules = [
   MatCardModule,
@@ -43,7 +44,7 @@ const components = [
 
 
 @NgModule({
-  declarations: [...components],
+  declarations: [...components, SettingComponent],
   imports: [
     CommonModule,
     ...modules],

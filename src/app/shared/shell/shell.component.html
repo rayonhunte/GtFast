@@ -14,13 +14,16 @@
                 <a mat-list-item routerLink="/fast" matTooltip="fast">
                     <mat-icon style="cursor: pointer;">local_fire_department</mat-icon>
                 </a>
+                <a mat-list-item routerLink="/setting" matTooltip="settings">
+                    <mat-icon style="cursor: pointer;">settings</mat-icon>
+                </a>
                 <a mat-list-item routerLink="/" (click)="afAuth.signOut()" matTooltip="LOGOUT">
                     <mat-icon style="cursor: pointer;">logout</mat-icon>
                 </a>
             </div>
         </mat-nav-list>
     </mat-drawer>
-    <mat-toolbar>
+    <mat-toolbar class="myTool">
         <mat-toolbar-row>
             <mat-icon style="cursor: pointer;" (click)="drawer.toggle()" matTooltip="Menu">menu_open</mat-icon>
         </mat-toolbar-row>

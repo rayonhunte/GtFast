@@ -1,7 +1,7 @@
 <body>
     <mat-card *ngIf="(afAuth.authState | async) as user" class="profile">
         <mat-card-header>
-            <div mat-card-avatar class="example-header-image"  
+            <div mat-card-avatar  
             style="background-image: url( {{user.photoURL}} )"></div>
             <mat-card-subtitle>
                 Email: {{user.email}}

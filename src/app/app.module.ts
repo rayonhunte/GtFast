@@ -23,7 +23,7 @@ import {SharedModule} from './shared/shared.module';
 import { ProfileComponent } from './user/profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { FastComponent } from './user/fast/fast.component';
-import {UserState}  from './state/user.state';
+import {UserState} from './state/user.state';
 
 
 @NgModule({
@@ -44,7 +44,6 @@ import {UserState}  from './state/user.state';
     BrowserAnimationsModule,
     NgxsModule.forRoot([UserState], { developmentMode: !environment.production}),
     SharedModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

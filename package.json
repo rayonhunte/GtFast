@@ -23,6 +23,7 @@
     "@angular/platform-browser-dynamic": "~10.0.6",
     "@angular/router": "~10.0.6",
     "@ngxs/store": "^3.7.1",
+    "date-fns": "^2.16.1",
     "firebase": "^7.0.0 || ^8.0.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
